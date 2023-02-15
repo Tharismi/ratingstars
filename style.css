@@ -1,0 +1,71 @@
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: 0;
+}
+
+header {
+  display: flex;
+}
+
+body {
+  background-color: white;
+  align-items: center;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  align-content: center;
+}
+
+h1 {
+  margin: 20px;
+  font-family: 'londrina solid';
+  text-align: center;
+}
+
+.confirmar {
+  padding: 8px 24px;
+  border-radius: 100px;
+  background-color: #2CC6D0;
+  border: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 143px;
+  box-shadow: -4px 12px 25px -10px #2EAFB9;
+  font-family: 'work sans';
+}
+
+.pular {
+  font-family: 'work sans';
+  color: #2CC6D0;
+  background: none;
+  border: none;
+}
+
+.avaliacao {
+  display: flex;
+}
+
+footer {
+  display: flex;
+  gap: 30px;
+  margin-top: 120px;
+}
+
+.star-widget input {
+  display: none;
+}
+.star-widget label {
+  float: right;
+}
+
+input:not(:checked)~label:hover,
+input:not(:checked)~label:hover~label {
+  background-image: url(./assets/estrela_cheia.svg);
+}
+
+input:checked~label {
+  background-image: url(./assets/estrela_cheia.svg);
+}
