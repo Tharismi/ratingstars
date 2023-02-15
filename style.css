@@ -23,8 +23,24 @@ h1 {
   text-align: center;
 }
 
-.confirmar {
-  padding: 8px 24px;
+.confirmar.desativado {
+  padding: 8px 0px;
+  border-radius: 100px;
+  background-color: #C8C8C8;
+  border: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 143px;
+  box-shadow: -4px 12px 25px -10px #C8C8C8;
+  font-family: 'work sans';
+  text-decoration: none;
+  font-size: 0.8em;
+}
+
+.confirmar.ativado {
+  padding: 8px 0px;
   border-radius: 100px;
   background-color: #2CC6D0;
   border: none;
@@ -35,6 +51,8 @@ h1 {
   width: 143px;
   box-shadow: -4px 12px 25px -10px #2EAFB9;
   font-family: 'work sans';
+  text-decoration: none;
+  font-size: 0.8em;
 }
 
 .pular {
@@ -42,6 +60,12 @@ h1 {
   color: #2CC6D0;
   background: none;
   border: none;
+  text-decoration: none;
+  font-size: 0.8em;
+}
+
+a.confirmar.desativado {
+  pointer-events: none;
 }
 
 .avaliacao {
@@ -52,11 +76,13 @@ footer {
   display: flex;
   gap: 30px;
   margin-top: 120px;
+  align-items: center;
 }
 
 .star-widget input {
   display: none;
 }
+
 .star-widget label {
   float: right;
 }

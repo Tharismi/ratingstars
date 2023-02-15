@@ -1,11 +1,12 @@
-document.getElementById("confirmar").disabled = true
+let confirmar = document.getElementById("confirmar")
 
 document.addEventListener("input", function (event) {
   var conteudo = document.getElementsByName("rate").value
 
   if (conteudo !== null && conteudo !== "") {
-    document.getElementById("confirmar").disabled = false
+    confirmar.classList.add("ativado")
+    confirmar.classList.remove("desativado")
   } else {
-    document.getElementById("confirmar").disabled = true
+    confirmar.classList.remove("ativado")
   }
 })
